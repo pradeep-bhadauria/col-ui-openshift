@@ -1,13 +1,6 @@
 pipeline{
-  agent any
+  agent { label 'nodejs8' }
   stages{
-	stage('Build') {
-      steps {
-        nodejs(nodeJSInstallationName: 'Node 8.x', configId: '<config-file-provider-id>') {
-          sh 'npm config ls'
-        }
-      }
-    }
     stage ('checkout'){
       steps{
         checkout scm
@@ -47,7 +40,7 @@ pipeline{
       steps{
         sh '''
           rm -rf node_modules
-          oc start-build col-ui --from-dir=. --follow
+          oc start-build angular-5-example --from-dir=. --follow
         '''
       }
     }
