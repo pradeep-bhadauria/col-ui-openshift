@@ -1,11 +1,6 @@
 pipeline{
   agent none
   stages{
-    stage ('checkout'){
-      steps{
-        checkout scm
-      }
-    }
     stage ('install modules'){
       steps{
         sh '''
