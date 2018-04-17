@@ -1,27 +1,69 @@
-# ColUi
+<img width="150" src="https://i.cloudup.com/zfY6lL7eFa-3000x3000.png" />
+<img width="50" src="https://angular.io/assets/images/logos/angular/angular.svg" />
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.7.4.
+## Angular4+ Express Starter ( Advanced )
 
-## Development server
+- Angular 5+
+- ExpressJS ( 4.x - with compression )
+- Webpack ( angular-cli )
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+[![Deploy](https://www.herokucdn.com/deploy/button.png)](https://heroku.com/deploy)
 
-## Code scaffolding
+## Concepts
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+- Redux ( NgRx/Store - with server calls)
+- Smart & dumb components
+- AOT: Ahead-of-Time compilation
+- Advanced routing ( lazy loading, router outlets...)
 
-## Build
+## Install / Development
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `-prod` flag for a production build.
+```bash
+git clone https://github.com/vladotesanovic/angular2-express-starter
+cd angular2-express-starter
 
-## Running unit tests
+# Install dependencies
+npm install
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+# start server
+npm run start
 
-## Running end-to-end tests
+# Client url: http://localhost:4200
+# Application ( epxress ) API: http://localhost:4300
+```
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+Install Redux DevTools chrome extenstion:
 
-## Further help
+https://chrome.google.com/webstore/detail/redux-devtools/lmhkpmbekcpmknklioeibfkpmmfibljd
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+## Build / Production
+
+```bash
+
+npm run build
+
+## Deploy dist folder to app server
+
+Structure of dist folder:
+
+/dist/server <-- expressjs
+/dist/client <-- angular2
+
+```
+
+## Note
+
+All html and css are from: http://www.w3schools.com/howto/
+<table style="border: 0">
+  <tr>
+    <td><img width="200" src="http://www.innovic.io/favicon.png" /></td>
+    <td>
+      <ul>
+        <li>INNOVIC doo</li>
+        <li>Software consulting company for building full stack solutions.</li>
+        <li>Proficient in: NodeJS, TypeScript, Angular, MongoDB...</li>
+        <li><b>You have project for us? hello@innovic.io</b></li>
+      </ul>
+    </td>
+  </tr>
+</table>
