@@ -3,15 +3,12 @@
   "version": "0.0.0",
   "license": "MIT",
   "scripts": {
+    "ng": "ng",
     "start": "ng serve",
-    "lint:client": "ng lint",
-    "lint:server": "tslint './server/**/*.ts' -c ./server/tslint.json --fix",
-    "test:client": "ng test --watch false",
-    "e2e:client": "ng e2e",
-    "build": "ng build --prod --sm=false --aot --output-path=dist/client && npm run server:build",
-    "server:run": "nodemon",
-    "server:build": "tsc -p ./server",
-    "postinstall": "npm run build --verbose"
+    "build": "ng build --prod",
+    "test": "ng test",
+    "lint": "ng lint",
+    "e2e": "ng e2e"
   },
   "private": true,
   "dependencies": {
@@ -24,11 +21,9 @@
     "@angular/platform-browser": "^5.2.0",
     "@angular/platform-browser-dynamic": "^5.2.0",
     "@angular/router": "^5.2.0",
-    "@types/jsonwebtoken": "^7.2.0",
     "core-js": "^2.4.1",
     "rxjs": "^5.5.6",
-    "zone.js": "^0.8.19",
-    "jsonwebtoken": "^7.3.0"
+    "zone.js": "^0.8.19"
   },
   "devDependencies": {
     "@angular/cli": "~1.7.4",
