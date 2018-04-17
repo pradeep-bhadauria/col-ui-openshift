@@ -1,5 +1,3 @@
-#!groovy
-
 properties(
     [
         [$class: 'BuildDiscarderProperty', strategy:
