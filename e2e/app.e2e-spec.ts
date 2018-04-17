@@ -1,6 +1,6 @@
 import { AppPage } from './app.po';
 
-describe('col-ui App', () => {
+describe('angular-example App', () => {
   let page: AppPage;
 
   beforeEach(() => {
