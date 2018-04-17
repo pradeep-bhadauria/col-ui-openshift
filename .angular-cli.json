@@ -55,6 +55,10 @@
   },
   "defaults": {
     "styleExt": "css",
-    "component": {}
+    "component": {},
+	"serve": {
+		"port": 8080,
+		"host": "col-ui-col-media.7e14.starter-us-west-2.openshiftapps.com"
+	}
   }
 }
