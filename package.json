@@ -11,7 +11,7 @@
     "build": "ng build --prod --sm=false --aot --output-path=dist/client && npm run server:build",
     "server:run": "nodemon",
     "server:build": "tsc -p ./server",
-    "postinstall": "npm run build"
+    "postinstall": "npm run build --verbose"
   },
   "private": true,
   "dependencies": {
