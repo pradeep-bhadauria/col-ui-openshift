@@ -1,4 +1,0 @@
-<div *ngIf="message" [ngClass]="{ 'alert fade in': message, 'alert-success': message.type === 'success', 'alert-danger': message.type === 'error' }">
-    <a class="close" (click)="hideAlert()" aria-label="close">&times;</a>
-    {{message.text}}
-</div>
